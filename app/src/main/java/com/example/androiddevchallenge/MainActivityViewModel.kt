@@ -55,7 +55,6 @@ class MainActivityViewModel : ViewModel() {
 
     private var countDownTimer: CountDownTimer? = null
 
-
     fun startTimer() {
         fun setNewCountTimer(seconds: Long, minutes: Long, hours: Long) {
             val oneSecondInMillis = 1000L
@@ -87,7 +86,11 @@ class MainActivityViewModel : ViewModel() {
                     }
 
                     if (newTimer) {
-                        setNewCountTimer(TimeUnit.SECONDS.toMillis(secondsInAMinute.toLong()), currentMinutes, currentHours)
+                        setNewCountTimer(
+                            TimeUnit.SECONDS.toMillis(secondsInAMinute.toLong()),
+                            currentMinutes,
+                            currentHours
+                        )
                         countDownTimer?.start()
                     }
                 }

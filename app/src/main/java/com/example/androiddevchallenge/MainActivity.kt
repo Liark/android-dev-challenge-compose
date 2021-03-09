@@ -109,7 +109,10 @@ fun MainScreen(
                 Spacer(modifier = Modifier.size(15.dp))
                 CurrentTimeLeft(timeUnit = MINUTES, currentTime = currentMinutes)
                 Spacer(modifier = Modifier.size(15.dp))
-                CurrentTimeLeft(timeUnit = SECONDS, currentTime = ceil((currentSeconds / 1000).toDouble()).toLong())
+                CurrentTimeLeft(
+                    timeUnit = SECONDS,
+                    currentTime = ceil((currentSeconds / 1000).toDouble()).toLong()
+                )
             }
         }
     }
