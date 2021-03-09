@@ -87,7 +87,7 @@ class MainActivityViewModel : ViewModel() {
                     }
 
                     if (newTimer) {
-                        setNewCountTimer(TimeUnit.SECONDS.toMillis(secondsInAMinute), currentMinutes, currentHours)
+                        setNewCountTimer(TimeUnit.SECONDS.toMillis(secondsInAMinute.toLong()), currentMinutes, currentHours)
                         countDownTimer?.start()
                     }
                 }
