@@ -13,15 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.ui.theme.constants
 
 import androidx.compose.ui.graphics.Color
+import com.example.androiddevchallenge.ui.theme.blue_light
 
-val purple200 = Color(0xFFBB86FC)
-val purple500 = Color(0xFF6200EE)
-val purple700 = Color(0xFF3700B3)
-val teal200 = Color(0xFF03DAC5)
-val blue_light = Color(0xFF61C0E6)
-val blue_dark = Color(0xFF4386A1)
-val background = Color(0XFF303030)
-// val background = Color(0xFFF7F3F2) // TODO: Will be final but using other color to be able to see surface better
+object MyColors {
+    val TextColor = Color(0xFF767D84)
+    val DarkBlue = Color(0xFF4386A1)
+    val LightBlue = blue_light
+}
